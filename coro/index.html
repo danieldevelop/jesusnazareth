@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lecturas Biblicas</title>
+        <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+        <!-- CSS local -->
+        <link rel="stylesheet" href="./css/bootswatch/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/estilos.css">
+    </head>
+    <body>
+    
+        <header class="cabecera"> <!-- py es igual a padding-top y padding-bottom -->
+            <h1 class="text-uppercase cabecera__titulo">Liturgia de cada dia</h1>
+            <h3 class="text-muted h6 cabecera__subtitulo">Lecturas de la celebración eucarística</h3>
+        </header>
+
+        <main>
+            <form class="form"> <!-- px es igual a padding-right y padding-left -->
+                <div class="form-group form__group">
+                    <label for="fechaLectura" class="form-label form__group--titulo">Ingrese fecha de lectura:</label>
+
+                    <div class="input-group mb-3">
+                        <input type="date" name="fechaLectura" id="fechaLectura" class="form-control form-group--input">
+                        <button class="btn btn-sm btn-primary text-uppercase form__group--boton" type="button" id="enviar">Buscar</button>
+                    </div>
+
+                    <p class="form-text text-italic fx-bold form__group--aviso">
+                        <em>Nota: Si las lecturas no aparecen, es porque no se han subido en la página de eucaristiadiaria</em>
+                    </p>
+                </div>
+            </form>
+        </main>
+
+
+        <!-- JavaScript local -->
+        <script src="./js/app.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html> 
